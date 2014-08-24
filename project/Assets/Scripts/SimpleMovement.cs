@@ -8,10 +8,12 @@ public class SimpleMovement : MonoBehaviour {
 	public float jumpSpeed = 1.0f;
 	private bool isJumping = false;
 	public float maxZ = 32.0f;
-	public float minZ = 32.0f;
+	public float minZ = -32.0f;
 	private float zPosition = 0.0f;
 	private bool isGrounded = true;
 	private bool isFalling = false;
+	public GameObject gameOverCanvas;
+	public GameObject shadow;
 
 	private Animator anim;
 	private SpriteRenderer sprite;
@@ -23,8 +25,6 @@ public class SimpleMovement : MonoBehaviour {
 	}
 
 	private void handleJump() {
-		if (Input.GetButtonDown ("Jump"))
-						Debug.Log ("Jump button presses");	
 
 		if (Input.GetButton ("Jump") && zPosition == 0.0) {
 			jumpSpeed = Mathf.Abs(jumpSpeed);
@@ -44,43 +44,57 @@ public class SimpleMovement : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Platform")
+	void OnTriggerEnter2D(Collider2D coll) {
+		if (coll.gameObject.tag == "Platform") {
 			isGrounded = true;
+			transform.parent = coll.transform;
+			shadow.SetActive(true);
+		}
 	}
 
-	void OnCollisionExit2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Platform")
+	void OnTriggerExit2D(Collider2D coll) {
+		if (coll.gameObject.tag == "Platform") {
 			isGrounded = false;
+			transform.parent = null;
+			shadow.SetActive(false);
+		}
 	}
 
 	void Update() {
 		// offset sprite by jump hight
 		Vector3 position = sprite.transform.localPosition;
-		position.y = zPosition;
-		sprite.transform.localPosition = position;
 
 		if (zPosition == 0.0f && !isGrounded) {
-			this.enabled = false;
+			rigidbody2D.velocity = Vector3.zero;
 			isFalling = true;
+			sprite.sortingOrder = 4;
+			gameObject.SendMessage("OnFall");
 		}
 
 		if (isFalling) {
 			zPosition -= Mathf.Abs(jumpSpeed);
-			if(zPosition <= minZ);
-
+			Debug.Log(zPosition);		
+			if(zPosition <= minZ) {
+				gameOverCanvas.BroadcastMessage("OnFall");
+				gameObject.SetActive(false);
+			}
 		}
+
+		position.y = zPosition;
+		sprite.transform.localPosition = position;
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {			
-		float inputX = Mathf.Abs(Input.GetAxis ("Horizontal")) > 0.01 ? Input.GetAxis ("Horizontal") : 0;
-		float inputY = Mathf.Abs(Input.GetAxis ("Vertical")) > 0.01 ? Input.GetAxis ("Vertical") : 0;
+	void FixedUpdate () {
+		if (!isFalling) {
+			float inputX = Mathf.Abs (Input.GetAxis ("Horizontal")) > 0.01 ? Input.GetAxis ("Horizontal") : 0;
+			float inputY = Mathf.Abs (Input.GetAxis ("Vertical")) > 0.01 ? Input.GetAxis ("Vertical") : 0;
 
-		anim.SetFloat ("xVelocity", inputX);
-		anim.SetFloat ("yVelocity", inputY);
-		rigidbody2D.velocity = new Vector3 (inputX * movementSpeed, inputY * movementSpeed);
+			anim.SetFloat ("xVelocity", inputX);
+			anim.SetFloat ("yVelocity", inputY);
+			rigidbody2D.velocity = new Vector3 (inputX * movementSpeed, inputY * movementSpeed);
 
-		handleJump ();
+			handleJump ();
+		}
 	}
 }
