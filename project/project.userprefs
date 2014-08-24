@@ -1,9 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ChangeColor.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CustomEvents.cs">
     <Files>
-      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="74" Column="3" />
+      <File FileName="Assets\ParalaxingBackground.cs" Line="12" Column="1" />
+      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="61" Column="26" />
       <File FileName="Assets\ChangeColor.cs" Line="7" Column="44" />
+      <File FileName="Assets\EventHandler.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\CustomEvents.cs" Line="8" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

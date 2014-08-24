@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class CustomEvents : MonoBehaviour {
+
+	public Slider timer;
+	public float expirationSpeed = 1.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +22,6 @@ public class CustomEvents : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		timer.value -= expirationSpeed * Time.deltaTime;
 	}
 }
