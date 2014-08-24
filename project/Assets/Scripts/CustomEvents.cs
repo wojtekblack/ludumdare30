@@ -11,6 +11,10 @@ public class CustomEvents : MonoBehaviour {
 	void RetryLevel() {
 		Application.LoadLevel (Application.loadedLevelName);
 	}
+
+	void MainMenu() {
+		Application.LoadLevel ("MainMenu");
+	}
 	
 	// Update is called once per frame
 	void Update () {

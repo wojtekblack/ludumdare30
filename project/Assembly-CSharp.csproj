@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ChangeColor.cs" />
+     <Compile Include="Assets\EventHandler.cs" />
      <Compile Include="Assets\Scripts\CustomEvents.cs" />
      <Compile Include="Assets\Scripts\EnableOnFall.cs" />
      <Compile Include="Assets\Scripts\SimpleMovement.cs" />
