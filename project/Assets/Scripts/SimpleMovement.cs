@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class SimpleMovement : MonoBehaviour {
@@ -12,7 +13,7 @@ public class SimpleMovement : MonoBehaviour {
 	private float zPosition = 0.0f;
 	private bool isGrounded = true;
 	private bool isFalling = false;
-	public GameObject gameOverCanvas;
+	public EventHandler eventHandler;
 	public GameObject shadow;
 
 	private Animator anim;
@@ -75,7 +76,7 @@ public class SimpleMovement : MonoBehaviour {
 		if (isFalling) {
 			zPosition -= Mathf.Abs(jumpSpeed);	
 			if(zPosition <= minZ) {
-				gameOverCanvas.BroadcastMessage("OnFall");
+				eventHandler.OnGameOver(EventArgs.Empty);
 				gameObject.SetActive(false);
 			}
 		}

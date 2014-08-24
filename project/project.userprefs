@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CustomEvents.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnableOnFall.cs">
     <Files>
       <File FileName="Assets\ParalaxingBackground.cs" Line="12" Column="1" />
-      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="61" Column="26" />
+      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="2" Column="14" />
       <File FileName="Assets\ChangeColor.cs" Line="7" Column="44" />
-      <File FileName="Assets\EventHandler.cs" Line="16" Column="1" />
-      <File FileName="Assets\Scripts\CustomEvents.cs" Line="8" Column="36" />
+      <File FileName="Assets\EventHandler.cs" Line="8" Column="45" />
+      <File FileName="Assets\Scripts\CustomEvents.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\EnableOnFall.cs" Line="2" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
