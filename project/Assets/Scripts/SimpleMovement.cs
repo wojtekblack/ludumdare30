@@ -31,6 +31,8 @@ public class SimpleMovement : MonoBehaviour {
 			isJumping = true;
 			collider2D.isTrigger = true;
 		}
+
+		anim.SetBool ("isJumping", isJumping);
 		
 		if (isJumping)
 			zPosition += jumpSpeed;
@@ -68,12 +70,10 @@ public class SimpleMovement : MonoBehaviour {
 			rigidbody2D.velocity = Vector3.zero;
 			isFalling = true;
 			sprite.sortingOrder = 4;
-			gameObject.SendMessage("OnFall");
 		}
 
 		if (isFalling) {
-			zPosition -= Mathf.Abs(jumpSpeed);
-			Debug.Log(zPosition);		
+			zPosition -= Mathf.Abs(jumpSpeed);	
 			if(zPosition <= minZ) {
 				gameOverCanvas.BroadcastMessage("OnFall");
 				gameObject.SetActive(false);
@@ -82,6 +82,7 @@ public class SimpleMovement : MonoBehaviour {
 
 		position.y = zPosition;
 		sprite.transform.localPosition = position;
+		anim.SetFloat ("zPosition", zPosition);
 	}
 	
 	// Update is called once per frame
