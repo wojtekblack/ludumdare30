@@ -1,0 +1,334 @@
+fileFormatVersion: 2
+guid: 83b035e4e9eebf14488f88c95f691a1a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Slider
+    21300002: Slider_0
+    21300004: Slider_1
+    21300006: Slider_2
+    21300008: Slider_3
+    21300010: Slider_4
+    21300012: Slider_5
+    21300014: Slider_6
+    21300016: Slider_7
+    21300018: Slider_8
+    21300020: Slider_9
+    21300022: Slider_10
+    21300024: Slider_11
+    21300026: Slider_12
+    21300028: Slider_13
+    21300030: Slider_14
+    21300032: Slider_15
+    21300034: Slider_16
+    21300036: Slider_17
+    21300038: Slider_18
+    21300040: Slider_19
+    21300042: Slider_20
+    21300044: Slider_21
+    21300046: Slider_22
+    21300048: Slider_23
+    21300050: Slider_24
+    21300052: Slider_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Slider_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 92
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 92
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 92
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 92
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_4
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 93
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 75
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 75
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 75
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 75
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 75
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 58
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 58
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 58
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_13
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 58
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_14
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 58
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 41
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_16
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 41
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 41
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_18
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 41
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_19
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 41
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 24
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 24
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 24
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 24
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_24
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 24
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 7
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
