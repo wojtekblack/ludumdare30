@@ -11,7 +11,7 @@ public class CustomEvents : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		eventHandler = gameObject.GetComponent<EventHandler> ();
 	}
 
 	void RetryLevel() {

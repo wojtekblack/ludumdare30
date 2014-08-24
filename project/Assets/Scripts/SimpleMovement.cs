@@ -18,16 +18,19 @@ public class SimpleMovement : MonoBehaviour {
 
 	private Animator anim;
 	private SpriteRenderer sprite;
+	private AudioSource jumpSound;
 
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponentInChildren<Animator> ();
 		sprite = gameObject.GetComponentInChildren<SpriteRenderer> ();
+		jumpSound = gameObject.GetComponent<AudioSource> ();
 	}
 
 	private void handleJump() {
 
 		if (Input.GetButton ("Jump") && zPosition == 0.0) {
+			jumpSound.Play();
 			jumpSpeed = Mathf.Abs(jumpSpeed);
 			isJumping = true;
 			collider2D.isTrigger = true;
