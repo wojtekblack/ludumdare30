@@ -30,6 +30,7 @@ TextureImporter:
     21300050: Slider_24
     21300052: Slider_25
     21300054: Slider_26
+    21300056: Slider_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -324,13 +325,13 @@ TextureImporter:
     - name: Slider_25
       rect:
         serializedVersion: 2
-        x: 84
+        x: 155
         y: 7
-        width: 105
+        width: 34
         height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 0, z: 4, w: 0}
     - name: Slider_26
       rect:
         serializedVersion: 2
@@ -341,5 +342,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_27
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 9
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 1, y: 0, z: 1, w: 0}
   spritePackingTag: 
   userData: 
