@@ -59,8 +59,13 @@ public class SimpleMovement : MonoBehaviour {
 			isGrounded = true;
 			tempParent = coll.transform;
 			shadow.SetActive(true);
-			eventHandler.SendMessage ("InitializePlatforms", 
-			                          tempParent.GetComponent<PlatformController> ().colorString);
+			//eventHandler.SendMessage ("InitializePlatforms", 
+			//    tempParent.GetComponent<PlatformController> ().colorString);
+		}
+		else if(coll.gameObject.tag == "Portal") {
+			if(zPosition > 20 && zPosition < 40) {
+				coll.SendMessage("OnCollision");
+			}
 		}
 	}
 

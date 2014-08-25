@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SimpleMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PortalController.cs">
     <Files>
-      <File FileName="Assets\Scripts\EventHandler.cs" Line="13" Column="2" />
-      <File FileName="Assets\Scripts\EnableOnFall.cs" Line="17" Column="15" />
+      <File FileName="Assets\Scripts\EventHandler.cs" Line="63" Column="22" />
+      <File FileName="Assets\Scripts\EnableOnFall.cs" Line="20" Column="29" />
       <File FileName="Assets\Scripts\SimpleMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlatformController.cs" Line="25" Column="21" />
-      <File FileName="Assets\Scripts\SliderController.cs" Line="22" Column="3" />
+      <File FileName="Assets\Scripts\PlatformController.cs" Line="25" Column="85" />
+      <File FileName="Assets\Scripts\SliderController.cs" Line="1" Column="1" />
+      <File FileName="Assets\PortalController.cs" Line="15" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

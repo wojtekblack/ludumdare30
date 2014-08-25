@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PortalController.cs" />
      <Compile Include="Assets\Scripts\EnableOnFall.cs" />
      <Compile Include="Assets\Scripts\EventHandler.cs" />
      <Compile Include="Assets\Scripts\ParalaxingBackground.cs" />

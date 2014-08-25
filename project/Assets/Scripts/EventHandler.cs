@@ -20,10 +20,13 @@ public class EventHandler : MonoBehaviour {
 	public delegate void GameEventHandler(object sender, MessageEventArgs e);
 
 	public event GameEventHandler GameOver;
-	public event GameEventHandler RedPortal;
-	public event GameEventHandler BluePortal;
-	public event GameEventHandler GreenPortal;
+	public event GameEventHandler Portal;
 	public event GameEventHandler InitPlatforms;
+
+	public void OnPortal(MessageEventArgs e) {
+		if (Portal != null)
+			Portal (this, e);
+	}
 
 	public void OnGameOver(MessageEventArgs e) {
 		if (GameOver != null)
@@ -52,6 +55,15 @@ public class EventHandler : MonoBehaviour {
 	}
 
 	void SetColor(PlatformController sender) {
+		if (sender.colorString == "red")
+			sender.SendMessage ("SetColor", red);
+		else if (sender.colorString == "green")
+			sender.SendMessage ("SetColor", green);
+		else if (sender.colorString == "blue")
+			sender.SendMessage ("SetColor", blue);
+	}
+
+	void SetColorPortal(PortalController sender) {
 		if (sender.colorString == "red")
 			sender.SendMessage ("SetColor", red);
 		else if (sender.colorString == "green")
