@@ -1,13 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SimpleMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="86" Column="3" />
+      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="39" Column="28" />
       <File FileName="Assets\ParalaxingBackground.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="106" Column="1" />
-      <File FileName="Assets\ChangeColor.cs" Line="1" Column="1" />
-      <File FileName="Assets\EventHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CustomEvents.cs" Line="14" Column="59" />
+      <File FileName="Assets\ChangeColor.cs" Line="25" Column="1" />
+      <File FileName="Assets\EventHandler.cs" Line="49" Column="17" />
       <File FileName="Assets\Scripts\EnableOnFall.cs" Line="16" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>

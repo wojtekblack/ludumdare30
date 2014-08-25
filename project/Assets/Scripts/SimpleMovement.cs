@@ -7,6 +7,7 @@ public class SimpleMovement : MonoBehaviour {
 	public float movementSpeed = 1.0f;
 	
 	public float jumpSpeed = 1.0f;
+	public float dashSpeed = 100f;
 	private bool isJumping = false;
 	public float maxZ = 32.0f;
 	public float minZ = -32.0f;
@@ -19,6 +20,7 @@ public class SimpleMovement : MonoBehaviour {
 	private Animator anim;
 	private SpriteRenderer sprite;
 	private AudioSource jumpSound;
+	private Transform tempParent;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +36,7 @@ public class SimpleMovement : MonoBehaviour {
 			jumpSpeed = Mathf.Abs(jumpSpeed);
 			isJumping = true;
 			collider2D.isTrigger = true;
+			transform.parent = null;
 		}
 
 		anim.SetBool ("isJumping", isJumping);
@@ -47,13 +50,14 @@ public class SimpleMovement : MonoBehaviour {
 			isJumping = false;
 			zPosition = 0.0f;
 			collider2D.isTrigger = false;
+			transform.parent = tempParent;
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Platform") {
 			isGrounded = true;
-			transform.parent = coll.transform;
+			tempParent = coll.transform;
 			shadow.SetActive(true);
 		}
 	}
@@ -61,7 +65,6 @@ public class SimpleMovement : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Platform") {
 			isGrounded = false;
-			transform.parent = null;
 			shadow.SetActive(false);
 		}
 	}
@@ -71,7 +74,7 @@ public class SimpleMovement : MonoBehaviour {
 		Vector3 position = sprite.transform.localPosition;
 
 		if (zPosition == 0.0f && !isGrounded) {
-			rigidbody2D.velocity = Vector3.zero;
+			rigidbody2D.velocity = Vector2.zero;
 			isFalling = true;
 			sprite.sortingOrder = 4;
 		}

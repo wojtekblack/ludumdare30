@@ -14,7 +14,7 @@ public class EnableOnFall : MonoBehaviour {
 		anim = gameObject.GetComponent<Animation> ();
 		canvas.enabled = false;
 
-		eventHandler.GameOver += new EventHandler.GameOverEventHandler (OnFall);
+		eventHandler.GameOver += new EventHandler.GameEventHandler (OnFall);
 	}
 
 	void OnFall(object sender, EventArgs e) {
