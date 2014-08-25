@@ -4,9 +4,9 @@ using System.Collections;
 
 public class EnableOnFall : MonoBehaviour {
 
+	public EventHandler eventHandler;
 	private Canvas canvas;
 	private Animation anim;
-	public EventHandler eventHandler;
 
 	// Use this for initialization
 	void Start () {

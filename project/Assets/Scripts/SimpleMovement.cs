@@ -4,6 +4,7 @@ using System.Collections;
 
 public class SimpleMovement : MonoBehaviour {
 
+	public EventHandler eventHandler;
 	public float movementSpeed = 1.0f;
 	
 	public float jumpSpeed = 1.0f;
@@ -14,7 +15,6 @@ public class SimpleMovement : MonoBehaviour {
 	private float zPosition = 0.0f;
 	private bool isGrounded = true;
 	private bool isFalling = false;
-	public EventHandler eventHandler;
 	public GameObject shadow;
 
 	private Animator anim;

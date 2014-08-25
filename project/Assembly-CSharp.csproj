@@ -46,12 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChangeColor.cs" />
-     <Compile Include="Assets\EventHandler.cs" />
-     <Compile Include="Assets\ParalaxingBackground.cs" />
-     <Compile Include="Assets\PlatformController.cs" />
      <Compile Include="Assets\Scripts\EnableOnFall.cs" />
+     <Compile Include="Assets\Scripts\EventHandler.cs" />
+     <Compile Include="Assets\Scripts\ParalaxingBackground.cs" />
+     <Compile Include="Assets\Scripts\PlatformController.cs" />
      <Compile Include="Assets\Scripts\SimpleMovement.cs" />
+     <Compile Include="Assets\Scripts\SliderController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
