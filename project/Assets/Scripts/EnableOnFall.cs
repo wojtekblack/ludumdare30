@@ -17,7 +17,7 @@ public class EnableOnFall : MonoBehaviour {
 		eventHandler.GameOver += new EventHandler.GameEventHandler (OnFall);
 	}
 
-	void OnFall(object sender, EventArgs e) {
+	void OnFall(object sender, EventHandler.MessageEventArgs e) {
 		anim.Play ("canvas_fadeIn");
 	}
 	

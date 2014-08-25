@@ -17,7 +17,7 @@ public class SliderController : MonoBehaviour {
 		eventHandler.GameOver += new EventHandler.GameEventHandler (OnGameOver);
 	}
 
-	void OnGameOver(object sender, EventArgs e) {
+	void OnGameOver(object sender, EventHandler.MessageEventArgs e) {
 		gameObject.SetActive (false);
 	}
 	
@@ -26,7 +26,7 @@ public class SliderController : MonoBehaviour {
 		if (!isGameOver) {
 			slider.value -= expirationSpeed * Time.deltaTime;
 			if (slider.value <= 0.0f)
-				eventHandler.OnGameOver (EventArgs.Empty);
+				eventHandler.OnGameOver (new EventHandler.MessageEventArgs(""));
 		}
 	}
 }

@@ -9,14 +9,23 @@ public class EventHandler : MonoBehaviour {
 	public Color green;
 	public Color blue;
 
-	public delegate void GameEventHandler(object sender, EventArgs e);
+	public class MessageEventArgs : EventArgs {
+		public String Message { get; set; }
+		
+		public MessageEventArgs(String msg) {
+			Message = msg;
+		}
+	}
+
+	public delegate void GameEventHandler(object sender, MessageEventArgs e);
 
 	public event GameEventHandler GameOver;
 	public event GameEventHandler RedPortal;
 	public event GameEventHandler BluePortal;
 	public event GameEventHandler GreenPortal;
+	public event GameEventHandler InitPlatforms;
 
-	public void OnGameOver(EventArgs e) {
+	public void OnGameOver(MessageEventArgs e) {
 		if (GameOver != null)
 			GameOver (this, e);
 	}
@@ -37,6 +46,11 @@ public class EventHandler : MonoBehaviour {
 		Application.LoadLevel ("MainMenu");
 	}
 
+	void InitializePlatforms(String color) {
+		if (InitPlatforms != null)
+			InitPlatforms (this, new MessageEventArgs(color));
+	}
+
 	void SetColor(PlatformController sender) {
 		if (sender.colorString == "red")
 			sender.SendMessage ("SetColor", red);
@@ -45,4 +59,5 @@ public class EventHandler : MonoBehaviour {
 		else if (sender.colorString == "blue")
 			sender.SendMessage ("SetColor", blue);
 	}
+
 }

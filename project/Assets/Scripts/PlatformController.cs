@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class PlatformController : MonoBehaviour {
@@ -10,6 +11,15 @@ public class PlatformController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		eventHandler.InitPlatforms += new EventHandler.GameEventHandler (Initialize);
+
+		if (colorString == "red")
+			eventHandler.RedPortal += new EventHandler.GameEventHandler (OnFade);
+		if (colorString == "green")
+			eventHandler.GreenPortal += new EventHandler.GameEventHandler (OnFade);
+		if (colorString == "blue")
+			eventHandler.BluePortal += new EventHandler.GameEventHandler (OnFade);
+
 		eventHandler.SendMessage ("SetColor", this);
 		anim = gameObject.GetComponent<Animator> ();
 		SpriteRenderer[] children = gameObject.GetComponentsInChildren<SpriteRenderer> ();
@@ -17,8 +27,17 @@ public class PlatformController : MonoBehaviour {
 			sr.color = color;
 	}
 
+	void Initialize(object sender, EventHandler.MessageEventArgs e) {
+		if (!(e.Message == colorString))
+			anim.SetTrigger ("fade");
+	}
+
 	void SetColor(Color color) {
 		this.color = color;
+	}
+
+	void OnFade(object sender, EventHandler.MessageEventArgs e) {
+		anim.SetTrigger ("fade");
 	}
 	
 	// Update is called once per frame

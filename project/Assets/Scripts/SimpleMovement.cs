@@ -59,6 +59,8 @@ public class SimpleMovement : MonoBehaviour {
 			isGrounded = true;
 			tempParent = coll.transform;
 			shadow.SetActive(true);
+			eventHandler.SendMessage ("InitializePlatforms", 
+			                          tempParent.GetComponent<PlatformController> ().colorString);
 		}
 	}
 
@@ -82,7 +84,7 @@ public class SimpleMovement : MonoBehaviour {
 		if (isFalling) {
 			zPosition -= Mathf.Abs(jumpSpeed);	
 			if(zPosition <= minZ) {
-				eventHandler.OnGameOver(EventArgs.Empty);
+				eventHandler.OnGameOver(new EventHandler.MessageEventArgs(""));
 				gameObject.SetActive(false);
 			}
 		}
