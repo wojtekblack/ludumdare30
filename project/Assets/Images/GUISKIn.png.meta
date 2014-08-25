@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: 2d66fd7cb2d63a24c9809470b1b84789
+guid: b169b85c01a8c6d48849ee7559dbcf1f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Portal
-    21300002: Portal_0
-    21300004: Portal_1
+    21300000: GUISKIn
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,37 +32,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 4, y: 4, z: 4, w: 4}
   spritePixelsToUnits: 1
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Portal_0
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 14
-        width: 52
-        height: 57
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Portal_1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 71
-        width: 2
-        height: 1
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
